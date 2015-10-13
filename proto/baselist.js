@@ -3,7 +3,7 @@ var BaseList = (function(){
     //privates
     var listItemsGenerator = function(prefix){
         var _id = 0;
-        var _prefix = prefix ? prefix : '';
+        var _prefix = prefix || '';
 
         return function(text, position){
             _id+=1
@@ -25,7 +25,7 @@ var BaseList = (function(){
             var parent = document.getElementById(parentId);
             if(parent){
                 e.innerText = listItem.text;
-                e.setAttribute('class','baselist-item')
+                e.setAttribute('class','list-item')
                 e.id = listItem.id;
                 parent.appendChild(e);
             }

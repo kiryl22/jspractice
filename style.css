@@ -1,0 +1,47 @@
+* {
+    font-family: monospace;
+    color: #545454;
+}
+
+.list-wrapper {
+    float: left;
+    clear: both;
+}
+
+.list-item,
+.service-node {
+    position: relative;
+    float: left;
+    padding: 20px;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    background-color: gainsboro;
+    font-size: 28px;
+
+}
+
+.service-node input[type="text"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.service-node button {
+    float: right;
+    margin-left: 10px;
+}
+
+.delete-btn {
+    position: absolute;
+    top:0;
+    right: 0;
+    background-image: url("del-icon.png");
+    background-size: 16px;
+    height: 16px;
+    width: 16px;
+    margin: 3px;
+    cursor: pointer;
+}

@@ -2,27 +2,17 @@
 <head>
     <script src="baselist.js"></script>
     <script src="customlist.js"></script>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <div id="baseList"></div>
+    <div id="baseList" class="list-wrapper"></div>
     <br>
-    <div id="customList"></div>
+    <div id="customList" class="list-wrapper"></div>
 </body>
 <script type="text/javascript">
     (function(){
-        var baseList = new BaseList("baseList");
-        baseList.add("firstItem");
-        var itemToDelete = baseList.add("secondItem");
-        baseList.add("thirdItem");
-        baseList.delete(itemToDelete.id);
-
-        var customList = new CustomList("customList");
-        customList.add("A");
-        customList.add("X");
-        customList.add("B");
-
-        customList.sort();
-
+        var baseList = new BaseList("baseList", true);
+        var customList = new CustomList("customList", true);
     }())
 </script>
 </html>
